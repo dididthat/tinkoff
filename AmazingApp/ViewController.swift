@@ -8,6 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func Button(_ sender: Any) {
+        print("Нажата кнопка")
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
