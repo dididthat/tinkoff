@@ -18,11 +18,24 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var profileAdd: UIButton!
     
+    
+//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+//        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+//        print(profileAdd.frame)
+//    }
+//
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+    
  
     @IBAction func Edit(_ sender: Any) {
     }
     
     @IBAction func profileAddPhoto(_ sender: Any) {
+        let controller = UIAlertController(title: "hey", message: "tata", preferredStyle: .actionSheet)
+        present(controller, animated: true)
+        
         print("выбери изображение профиля")
     }
 
