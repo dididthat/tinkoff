@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,8 +34,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qG6-hm-3Y9">
-                                <rect key="frame" x="35" y="800" width="344" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qG6-hm-3Y9">
+                                <rect key="frame" x="35" y="815" width="344" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.1176470518" green="0.20784312490000001" blue="0.2235293984" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -55,32 +54,17 @@
                                     <action selector="Edit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mis-e2-8YG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTO-Jn-zjv">
-                                <rect key="frame" x="299" y="338" width="80" height="80"/>
-                                <color key="backgroundColor" name="#3F78F0"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="rTO-Jn-zjv" secondAttribute="height" id="M9B-au-0Zt"/>
-                                    <constraint firstAttribute="height" constant="80" id="r8G-Th-bt9"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="profileAddPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1j0-AM-bKF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qG6-hm-3Y9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="6h6-5o-JUZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qG6-hm-3Y9" secondAttribute="trailing" constant="35" id="BmX-ny-aKF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hL2-pq-ECw" secondAttribute="trailing" id="DaV-d4-0EE"/>
-                            <constraint firstItem="rTO-Jn-zjv" firstAttribute="trailing" secondItem="0U4-8d-PmG" secondAttribute="trailing" id="XFp-JL-KhY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0U4-8d-PmG" secondAttribute="trailing" constant="35" id="Zv9-tx-GEF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lW8-hs-5wn" secondAttribute="trailing" constant="35" id="aLY-Qe-Zol"/>
                             <constraint firstItem="0U4-8d-PmG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="c5r-Ov-Yar"/>
                             <constraint firstItem="hL2-pq-ECw" firstAttribute="top" secondItem="0U4-8d-PmG" secondAttribute="bottom" constant="20" id="jPL-pW-Rut"/>
-                            <constraint firstItem="rTO-Jn-zjv" firstAttribute="bottom" secondItem="0U4-8d-PmG" secondAttribute="bottom" id="lCY-bE-xes"/>
                             <constraint firstItem="qG6-hm-3Y9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="lNh-ea-196"/>
                             <constraint firstItem="hL2-pq-ECw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="pFT-za-HtT"/>
                             <constraint firstItem="0U4-8d-PmG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="rdQ-S1-86G"/>
@@ -90,7 +74,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="profileAdd" destination="rTO-Jn-zjv" id="ZDi-ya-Rp4"/>
                         <outlet property="profileDescription" destination="lW8-hs-5wn" id="nBL-Z3-n5b"/>
                         <outlet property="profileEdit" destination="qG6-hm-3Y9" id="A62-IB-0Y0"/>
                         <outlet property="profileName" destination="hL2-pq-ECw" id="873-mg-cOQ"/>
@@ -104,9 +87,6 @@
     </scenes>
     <resources>
         <image name="placeholder-user" width="600" height="600"/>
-        <namedColor name="#3F78F0">
-            <color red="0.24699999392032623" green="0.47099998593330383" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
